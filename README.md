@@ -77,6 +77,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://github.com/Emanuele-Sgroi/Website-Template-with-CMS/blob/master/LICENSE.md).
 
 Note: While the template of this project can be used, the metadata are proprietary and should not be reused without permission.
