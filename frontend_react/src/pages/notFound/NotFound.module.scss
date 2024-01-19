@@ -1,0 +1,68 @@
+.notFoundSection {
+  background-image: url("../../assets/bg_planet.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  div {
+    background-color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    min-width: 30%;
+    filter: drop-shadow(9px 10px 1px #0000009d);
+    position: relative;
+
+    @media (max-width: 1600px) {
+      max-width: 55%;
+    }
+    @media (max-width: 1450px) {
+      max-width: 65%;
+    }
+    @media (max-width: 1150px) {
+      max-width: 70%;
+    }
+    @media (max-width: 1050px) {
+      max-width: 90%;
+    }
+    @media (max-width: 751px) {
+      padding: 1.5rem;
+    }
+  }
+
+  h1 {
+    font-size: calc(1.75rem + 1.5vw);
+    color: var(--color-purple);
+    @media (max-width: 751px) {
+      margin-bottom: 2.5rem;
+    }
+
+    span {
+      color: var(--color-red-light);
+      font-weight: 500;
+      font-size: calc(1.4rem + 1.5vw);
+    }
+  }
+
+  img {
+    width: 400px;
+    height: auto;
+    margin: 0.5rem 0;
+
+    @media (max-width: 650px) {
+      width: 250px;
+    }
+    @media (max-width: 300px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: calc(1rem + 1vw);
+    margin-bottom: 1rem;
+  }
+
+  a {
+    padding: calc(0.5rem + 0.2vw) calc(1rem + 0.5vw);
+    font-size: calc(0.6rem + 1vw);
+  }
+}

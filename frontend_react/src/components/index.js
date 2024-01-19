@@ -1,0 +1,12 @@
+export { default as About } from "./About/About";
+export { default as Contacts } from "./Contacts/Contacts";
+export { default as Footer } from "./Footer/Footer";
+export { default as Homepage } from "./Homepage/Homepage";
+export { default as Mission } from "./Mission/Mission";
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as ServiceDetailsComp } from "./ServiceDetailsComp/ServiceDetailsComp";
+export { default as Services } from "./Services/Services";
+export { default as Scroller } from "./Scroller/Scroller";
+export { default as Loader } from "./Loader/Loader";
+export { default as Privacy } from "./Privacy/Privacy";
+export { default as PrivacyModal } from "./Privacy/PrivacyModal";

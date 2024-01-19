@@ -1,0 +1,232 @@
+.navbar_container {
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+
+  &.scrolled .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.1s ease-in-out;
+  }
+
+  @media (max-width: 705px) {
+    height: 60px;
+  }
+
+  .navbar {
+    height: 100%;
+    background-color: transparent;
+    transform: translateY(-100%);
+    transition: all 0.3 ease-in-out;
+    padding: 0 3rem;
+    @media (max-width: 758px) {
+      display: none;
+    }
+    .nav_left {
+      height: 100%;
+      .logo {
+        width: auto;
+        height: 60px;
+      }
+      ul {
+        gap: 20px;
+        padding: 0 0 0 2.5rem;
+        li {
+          a {
+            color: var(--color-white);
+            font-size: 18px;
+            font-weight: 400;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--color-red-light);
+            }
+          }
+        }
+      }
+    }
+    .nav_right {
+      height: 100%;
+      ul {
+        gap: 20px;
+        li {
+          a {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar.active {
+    transform: translateY(0);
+  }
+  ul {
+    gap: 20px;
+    padding: 0 0 0 2.5rem;
+    li {
+      a {
+        color: var(--color-white);
+        font-size: 18px;
+        font-weight: 300;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: var(--color-red-light);
+        }
+      }
+    }
+  }
+}
+
+.navbar_mobile {
+  height: 60px;
+  background-color: var(--color-nav);
+  opacity: 0;
+  transition: all 0.1s linear;
+  padding: 0 2.5rem;
+  z-index: 999;
+  position: fixed;
+  @media (min-width: 759px) {
+    display: none;
+  }
+  a {
+    z-index: 910;
+    .logo {
+      width: auto;
+      height: 45px;
+    }
+  }
+
+  .fakeNav {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-nav);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 902;
+  }
+
+  .menu {
+    width: 250px;
+    height: auto;
+    background-color: var(--color-nav);
+    position: fixed;
+    z-index: 800;
+    top: 60px;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+
+    ul {
+      gap: 35px;
+      padding: 20px;
+      .line {
+        width: 10px;
+        height: 1px;
+        background-color: var(--color-white);
+      }
+      li {
+        a {
+          color: var(--color-white);
+          font-size: 24px;
+          font-weight: 300;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: var(--color-red-light);
+          }
+        }
+        .socials {
+          margin-top: 2rem;
+          a {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          a:nth-child(2) {
+            margin: 0 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .menu.open {
+    transform: translateX(0);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.navbar_mobile.active {
+  opacity: 1;
+}
+
+//BURGER MENU
+.nav_icon {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 910;
+}
+.nav_icon span {
+  background-color: var(--color-white);
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 3px;
+  transition-duration: 300ms;
+}
+.nav_icon span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.nav_icon span:nth-child(2) {
+  top: 11px;
+  left: 0px;
+  opacity: 1;
+}
+.nav_icon span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+.nav_icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+  background-color: var(--color-red-light);
+}
+.nav_icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav_icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+  background-color: var(--color-red-light);
+}
+
+.noShow {
+  display: none;
+}
+
+//opening animation
+
+.opening_animation {
+  animation: slideDown 0.5s ease forwards;
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.aboutSection {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
+  .textContent {
+    width: 50%;
+    padding: 80px 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      padding: 70px 2rem 3rem 2rem;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 70px 1.5rem 3rem 1.5rem;
+    }
+
+    @media (max-width: 750px) {
+      width: 100%;
+      padding: 70px 1rem 2rem 1rem;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: calc(1.75rem + 1.5vw); /* Responsive font size */
+
+      @media (max-width: 1000px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      max-width: 90%;
+      font-size: calc(1rem + 0.5vw); /* Responsive font size */
+
+      @media (max-width: 1000px) {
+        font-size: calc(0.9rem + 0.5vw);
+      }
+    }
+
+    p:nth-child(1) {
+      margin-bottom: 1rem;
+      @media (max-width: 1450px) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .lineSeparator {
+      width: 70%;
+      display: flex;
+      margin: 2.5rem 0;
+
+      @media (max-width: 1450px) {
+        margin: 1.5rem 0;
+      }
+
+      div {
+        background-color: var(--color-dark-purple);
+        height: 1px;
+        margin-right: 3px;
+      }
+      div:nth-child(1) {
+        width: 90%;
+        margin-right: 15px;
+      }
+      div:nth-child(2) {
+        width: 5%;
+      }
+      div:nth-child(3) {
+        width: 3%;
+      }
+      div:nth-child(4) {
+        width: 2%;
+      }
+      div:nth-child(5) {
+        width: 1%;
+      }
+    }
+
+    h2 {
+      font-size: calc(1.25rem + 1vw); /* Responsive font size */
+    }
+
+    ul {
+      padding: 0.5rem 0 0 2rem;
+      @media (max-width: 1000px) {
+        padding: 0.5rem 0 0 1rem;
+      }
+      li {
+        font-size: calc(1rem + 0.3vw); /* Responsive font size */
+      }
+    }
+
+    .aboutSocials {
+      width: 100%;
+      margin: 1.4rem 0 1.4rem 0;
+
+      @media (max-width: 1450px) {
+        margin: 2.5rem 0 2rem 0;
+      }
+      a {
+        img {
+          width: calc(25px + 1vw); /* Responsive size */
+          height: auto;
+        }
+      }
+      a:nth-child(2) {
+        margin: 0 15px;
+      }
+    }
+
+    .aboutButtons {
+      width: 100%;
+      a:nth-child(1) {
+        margin-right: 10px;
+      }
+      a:nth-child(2) {
+        margin-left: 10px;
+      }
+
+      a {
+        button {
+          padding: calc(0.5rem + 0.2vw) calc(1rem + 0.5vw); /* Responsive padding */
+        }
+      }
+    }
+  }
+
+  .imageContent {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: stretch; /* Vertically center the image */
+    justify-content: center;
+
+    @media (max-width: 750px) {
+      width: 100%;
+      align-items: center; /* Vertically center the image */
+      justify-content: center;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+
+      @media (min-width: 751px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+.missionSection {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
+
+  .imageContent {
+    width: 30%;
+    display: flex;
+    align-items: stretch; /* Vertically center the image */
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 700px) {
+      width: 100%;
+      max-height: 500px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      z-index: 2;
+      @media (min-width: 701px) {
+        display: none;
+      }
+    }
+  }
+
+  .textContent {
+    width: 70%;
+    padding: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      padding: 1.5rem 0rem 0rem 0rem;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 40px 0rem 0rem 0rem;
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: calc(1.75rem + 1.5vw);
+      margin-left: 3rem; //test
+    }
+
+    .handwritingP {
+      font-family: "Allison", cursive;
+      font-size: calc(1rem + 1vw); /* Responsive font size */
+      color: black;
+      margin-bottom: 3rem;
+      max-width: 70%;
+      line-height: 40px;
+      text-align: right;
+      align-self: flex-end;
+      padding: 0 3rem; //test
+
+      @media (max-width: 1000px) {
+        max-width: 80%;
+        line-height: 35px;
+      }
+      @media (max-width: 820px) {
+        max-width: 90%;
+        margin-bottom: 1rem;
+        line-height: 30px;
+      }
+
+      @media (max-width: 600px) {
+        line-height: 22px;
+      }
+      @media (max-width: 400px) {
+        max-width: 94%;
+      }
+    }
+
+    .text2 {
+      margin-bottom: 1rem;
+      max-width: 70%;
+      padding: 0 3rem;
+
+      @media (max-width: 1200px) {
+        max-width: 90%;
+      }
+    }
+
+    .text3_bg {
+      width: 100%;
+      background-color: var(--color-dark-purple);
+      padding: 2rem 3rem; //test
+      z-index: 1;
+      .text3 {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        max-width: 70%;
+
+        @media (max-width: 1200px) {
+          max-width: 90%;
+        }
+      }
+    }
+
+    p {
+      font-size: calc(1rem + 0.5vw); /* Responsive font size */
+
+      @media (max-width: 1000px) {
+        font-size: calc(0.9rem + 0.5vw);
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "short_name": "Martina Vecchio",
+  "name": "Martina Vecchio - Educazione Professionale",
+  "description": "Martina Vecchio: educatrice professionale, consulente filosofica e di carriera e lavoro nell’ambito della formazione.",
+  "lang": "it-IT",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "pianeta.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "pianeta.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "scope": "/"
+}

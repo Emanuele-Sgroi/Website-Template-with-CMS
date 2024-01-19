@@ -1,0 +1,115 @@
+.servicesSection {
+  background-color: var(--color-dark-blue);
+  padding: 80px 3rem 2rem 3rem;
+  @media (max-width: 1200px) {
+    padding: 70px 2rem 3rem 2rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 70px 1.5rem 3rem 1.5rem;
+  }
+
+  @media (max-width: 750px) {
+    padding: 70px 1rem 2rem 1rem;
+  }
+  h1 {
+    color: white;
+    font-size: calc(2rem + 1.5vw); /* Responsive font size */
+    margin-bottom: 1.5rem;
+  }
+
+  .introDiv {
+    padding: 3rem 3rem;
+    width: 80%;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px #000000);
+
+    @media (max-width: 950px) {
+      width: 90%;
+      padding: 2rem 2rem;
+    }
+
+    @media (max-width: 720px) {
+      width: 95%;
+      padding: 2rem 1rem;
+    }
+
+    div {
+      background-color: var(--color-purple);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      h3 {
+        color: white;
+        font-size: calc(0.8rem + 1vw);
+        text-align: center;
+        vertical-align: middle;
+        margin: 0;
+      }
+    }
+  }
+
+  .servicesContainer {
+    padding: 2.2rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .serviceCard {
+      filter: drop-shadow(0px 0px 10px #000000);
+      background-color: white;
+      border-radius: 1px;
+      padding: 1rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 300px; // Fixed width for cards
+      height: 400px; // Fixed height for cards
+      transition: all 0.1 ease-in-out;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px var(--color-red-light));
+      }
+
+      @media (max-width: 1090px) {
+        height: 350px;
+      }
+
+      img {
+        width: auto; // Full width of the card
+        height: 97px; // Fixed height for images
+        object-fit: cover; // Maintain aspect ratio and fill the space
+      }
+
+      h2 {
+        font-size: calc(0.9rem + 1vw);
+        text-align: center;
+        color: var(--color-purple);
+      }
+
+      h5 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: calc(0.6rem + 0.5vw);
+        font-weight: 800;
+        max-height: 4.5em;
+        @media (max-width: 1250px) {
+          font-size: 1rem;
+        }
+      }
+
+      a {
+        padding: calc(0.5rem + 0.2vw) calc(1rem + 0.5vw);
+      }
+    }
+  }
+
+  h3 {
+    color: white;
+    font-size: calc(1rem + 0.5vw);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
