@@ -3,6 +3,7 @@ export default {
   title: 'Informazioni Generali',
   type: 'document',
   fields: [
+    //
     {
       name: 'linkedin',
       title: 'Linkedin',
