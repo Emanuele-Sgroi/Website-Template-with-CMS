@@ -1,3 +1,5 @@
+//
+
 export default {
   name: 'homepage',
   title: 'Homepage',
