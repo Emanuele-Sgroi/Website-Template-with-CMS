@@ -1,3 +1,5 @@
+//
+
 export default {
   name: 'mission',
   title: 'Mission',
