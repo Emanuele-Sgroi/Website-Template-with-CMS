@@ -1,7 +1,7 @@
 export default {
   name: 'services_static',
   title: 'Servizi Statici',
-  type: 'document',
+  type: 'document', //
   fields: [
     {
       name: 'title1',
