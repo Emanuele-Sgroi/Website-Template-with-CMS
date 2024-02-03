@@ -1,3 +1,4 @@
+//
 import React, { useState, useEffect } from "react";
 import styles from "./About.module.scss";
 import { useGlobalState } from "../../context/GlobalStateContext";
