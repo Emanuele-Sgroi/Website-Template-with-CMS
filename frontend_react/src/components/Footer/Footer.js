@@ -6,7 +6,7 @@ import Loader from "../Loader/Loader";
 import { images } from "../../constants/index";
 import { Link } from "react-router-dom";
 import { Privacy, PrivacyModal } from "../index";
-
+//
 const Footer = () => {
   const { general } = useGlobalState();
   let date = new Date();
@@ -49,9 +49,7 @@ const Footer = () => {
               </p>
               <p>
                 {general.busName}
-                <span>
-                  {general.pIva.length > 0 ? `| ${general.pIva}` : ""}
-                </span>
+                <span>{!general.pIva === "no" ? general.pIva : ""}</span>
               </p>
               <p>
                 © <span>{yearDate}</span> All rights reserved
