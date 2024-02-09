@@ -5,7 +5,7 @@ import { images } from "../../constants";
 import { motion } from "framer-motion";
 import Loader from "../Loader/Loader";
 import { HashLink } from "react-router-hash-link";
-
+//
 const Homepage = () => {
   const [data, setData] = useState(null);
 
