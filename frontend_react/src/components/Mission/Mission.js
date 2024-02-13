@@ -17,7 +17,7 @@ const Mission = () => {
   }, []);
 
   const { title, text1, text2, text3, image } = missionData || {};
-
+  //
   return (
     <section className={`--flx ${styles.missionSection}`}>
       {!missionData ? (
