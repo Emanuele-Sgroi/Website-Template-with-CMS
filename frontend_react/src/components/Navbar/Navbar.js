@@ -23,27 +23,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const navigateAndScroll = (e, targetSectionId) => {
-    e.preventDefault();
-    console.log("Function called with targetSectionId:", targetSectionId);
-
-    const scrollToElement = () => {
-      const element = document.getElementById(targetSectionId);
-      console.log("Element to scroll to:", element);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    if (window.location.pathname === "/") {
-      console.log("Already on the homepage, scrolling to element");
-      scrollToElement();
-    } else {
-      console.log("Not on homepage, navigating first");
-      window.location.href = `/#${targetSectionId}`;
-    }
-  };
-
   return (
     <>
       <div
