@@ -12,7 +12,7 @@ const NavbarMobile = () => {
   const handleLinkClick = () => {
     setIsOpen(!isOpen);
   };
-
+  //
   const handleLinkClickLogo = () => {
     if (isOpen === true) {
       setIsOpen(false);
