@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Privacy.module.scss";
 import { useGlobalState } from "../../context/GlobalStateContext";
-
+//
 const Privacy = () => {
   const { general } = useGlobalState();
 
