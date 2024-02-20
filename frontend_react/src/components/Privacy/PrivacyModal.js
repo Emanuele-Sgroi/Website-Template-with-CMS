@@ -16,3 +16,4 @@ const PrivacyModal = ({ isOpen, onClose, children }) => {
 };
 
 export default PrivacyModal;
+//
