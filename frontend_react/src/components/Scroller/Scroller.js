@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Scroller.module.scss";
 import { TiArrowDownThick } from "react-icons/ti";
 import { Link as ScrollLink } from "react-scroll";
-
+//
 const Scroller = () => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
