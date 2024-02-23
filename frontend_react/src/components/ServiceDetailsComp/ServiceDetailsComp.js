@@ -19,47 +19,57 @@ const ServiceDetailsComp = ({ serviceDetails }) => {
       },
     },
   };
+  //
 
   return (
     <div className={styles.serviceDetailsComponent}>
-      <div className={styles.serviceTextContent}>
-        <div className={styles.serviceText}>
-          <h1>{serviceDetails.title}</h1>
-          <img
-            className={styles.serviceImageTop}
-            src={urlFor(serviceDetails.image)}
-            alt={serviceDetails.title}
-          />
-          <h3>{serviceDetails.text1}</h3>
-          <ul>
-            {serviceDetails.bulletPoints.map((point, index) => (
-              <li key={index}>
-                <BlockContent blocks={point} serializers={serializers} />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.serviceImage}>
-          <img src={urlFor(serviceDetails.image)} alt={serviceDetails.title} />
-        </div>
-      </div>
-      <div className={styles.lineSeparator}>
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-      </div>
-      <div className={styles.serviceOutro}>
-        <h3>{serviceDetails.text2}</h3>
-        <HashLink to="/#contatti" smooth className={`--btn2`}>
-          Contattami
-        </HashLink>
-      </div>
+      {serviceDetails ? (
+        <>
+          <div className={styles.serviceTextContent}>
+            <div className={styles.serviceText}>
+              <h1>{serviceDetails.title}</h1>
+              <img
+                className={styles.serviceImageTop}
+                src={urlFor(serviceDetails.image)}
+                alt={serviceDetails.title}
+              />
+              <h3>{serviceDetails.text1}</h3>
+              <ul>
+                {serviceDetails.bulletPoints.map((point, index) => (
+                  <li key={index}>
+                    <BlockContent blocks={point} serializers={serializers} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className={styles.serviceImage}>
+              <img
+                src={urlFor(serviceDetails.image)}
+                alt={serviceDetails.title}
+              />
+            </div>
+          </div>
+          <div className={styles.lineSeparator}>
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+          </div>
+          <div className={styles.serviceOutro}>
+            <h3>{serviceDetails.text2}</h3>
+            <HashLink to="/#contatti" smooth className={`--btn2`}>
+              Contattami
+            </HashLink>
+          </div>
+        </>
+      ) : (
+        <h4>Servizio non trovato</h4>
+      )}
     </div>
   );
 };
