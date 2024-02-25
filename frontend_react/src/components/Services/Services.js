@@ -18,7 +18,7 @@ const Services = () => {
       })
       .catch(console.error);
   }, []);
-
+  //
   useEffect(() => {
     client
       .fetch(`*[_type == "services_static"][0]`)
