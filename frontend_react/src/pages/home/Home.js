@@ -8,7 +8,7 @@ import {
   Scroller,
 } from "../../components/index";
 import { useLocation } from "react-router-dom";
-
+//
 const Home = () => {
   const location = useLocation();
 
