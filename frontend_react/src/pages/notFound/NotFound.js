@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./NotFound.module.scss";
 import { images } from "../../constants";
 import { useNavigate, Link, useLocation } from "react-router-dom";
-
+//
 const NotFound = () => {
   const navigate = useNavigate();
   const location = useLocation();
